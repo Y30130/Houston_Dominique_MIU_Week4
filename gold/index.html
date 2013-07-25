@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!-- Dominique Houston -->
+<!-- MIU  1307 -->
+<!-- Assignment 3 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>
+ReadKeep Gold </title>
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on">
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js">
+                            </script>
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="content" data-inset="false" class="ui-content-background-color">
+		<div data-role="header" data-position="fixed">
+			<header>
+			<div id="boundingBox">
+				<a data-ajax="false" href="#">
+				<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+				</a>
+			</div>
+			<a data-ajax="false" href="#addItem">
+			<img src="img/cta-button.png" alt="Add A New Title" class="cta-button"/>
+			</a>
+			</header>
+		</div>
+		<!-- List -->
+		<ul data-role="listview" data-inset="true">
+			<li>
+			<a href="#browseBook" value="bookPaperback" id="searchButton3">
+			<img src="img/Book - Paperback.png" class="ui-li-icon">
+			Browse Book Categories </a>
+			</li>
+			<li>
+			<a href="#browseDigital" value="digitalPC" id="searchButton1">
+			<img src="img/Digital - Personal Computer.png" class="ui-li-icon ui-corner-none">
+			Browse Digital Categories </a>
+			</li>
+		</ul>
+	</div>
+	<!-- List -->
+	<! -- Begin Footer -- >
+	<footer>
+	<p style="text-align:center;">
+		 Copyright &copy; 2013 Dominique Houston
+	</p>
+	</footer>
+	<! -- End Footer -->
+	<div data-role="footer" data-position="fixed">
+		<!-- Nav -->
+		<div data-role="navbar" data-theme="a">
+			<ul>
+				<li>
+				<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+				Home </a>
+				</li>
+				<li>
+				<a href="#about" data-icon="info">
+				Info </a>
+				</li>
+				<li>
+				<a href="#addItem" data-icon="plus">
+				Add Title </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Nav -->
+	</div>
+</div>
+<! -- Start About Page -- >
+<div data-role="page" id="about" data-add-back-btn="true">
+	<div data-role="content">
+		<div data-role="header" data-position="fixed">
+			<header>
+			<div id="boundingBox">
+				<a data-ajax="false" href="index.html">
+				<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+				</a>
+			</div>
+			</header>
+		</div>
+		<div data-role="collapsible-set" data-content-theme="d" id="set">
+			<div data-role="collapsible" id="set1" data-collapsed="false">
+				<h3>
+				About ReadKeep </h3>
+				<p>
+					 Keep track of what you read.
+				</p>
+				<br/>
+				<p>
+					<small>
+					&copy; Copyright 2013 Dominique Houston </small>
+				</p>
+			</div>
+		</div>
+		<div data-role="collapsible-set" data-content-theme="d" id="set">
+			<div data-role="collapsible" id="set1" data-collapsed="true">
+				<h3>
+				GitHub Links </h3>
+				<p>
+					<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2">
+					Repository </a>
+				</p>
+				<br/>
+				<p>
+					<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2/tree/master/gold">
+					Gold App </a>
+				</p>
+				<br/>
+				<p>
+					<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2/tree/master/Gold">
+					Gold App </a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<!-- Nav -->
+		<div data-role="navbar" data-theme="a">
+			<ul>
+				<li>
+				<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+				Home </a>
+				</li>
+				<li>
+				<a data-ajax="false" href="#about" data-icon="info">
+				Info </a>
+				</li>
+				<li>
+				<a data-ajax="false" href="#addItem" data-icon="plus">
+				Add Title </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Nav -->
+		<! -- Begin Footer -- >
+		<footer>
+		<p>
+			 Copyright &copy; 2013 Dominique Houston
+		</p>
+		</footer>
+		<! -- End Footer -->
+	</div>
+</div>
+<! -- End About Page -- >
+<! -- Start Book Browse Page -- >
+<div data-role="page" id="browseBook" data-add-back-btn="true">
+	<div data-role="content">
+		<div data-role="header" data-position="fixed">
+			<h1>
+			ReadKeep: Gold </h1>
+		</div>
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Sort Platforms..." data-inset="true">
+			<li>
+			<a data-rel="popup" href="#oopsFeature">
+			<img src="img/Book - Paperback.png" alt="Book - Paperback" class="ui-li-icon ui-corner-none">
+			Book - Paperback </a>
+			</li>
+			<li>
+			<a data-rel="popup" href="#oopsFeature">
+			<img src="img/Book - Hardcover.png" alt="Book - Hardcover" class="ui-li-icon">
+			Book - Hardcover </a>
+			</li>
+			<li>
+			<a data-rel="popup" href="#oopsFeature">
+			<img src="img/Book - Other.png" alt="Book - Other" class="ui-li-icon">
+			Book - Other </a>
+			</li>
+		</ul>
+		<div data-role="popup" id="oopsFeature">
+			<p>
+				Oops! This feature is not available yet.
+				<p>
+				</div>
+				<div data-role="footer" data-position="fixed">
+					<!-- Nav -->
+					<div data-role="navbar" data-theme="a">
+						<ul>
+							<li>
+							<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+							Home </a>
+							</li>
+							<li>
+							<a data-ajax="false" href="#about" data-icon="info">
+							Info </a>
+							</li>
+							<li>
+							<a data-ajax="false" href="#addItem" data-icon="plus">
+							Add Title </a>
+							</li>
+						</ul>
+					</div>
+					<!-- Nav -->
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
+				</div>
+			</div>
+		</div>
+		<! -- End Book Browse Page -- >
+		<! -- Start Digital Browse Page -- >
+		<div data-role="page" id="browseDigital" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>
+				ReadKeep: Gold </h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="Sort Platforms..." data-inset="true">
+					<li>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Digital - Personal Computer.png" alt="Digital - Personal Computer" class="ui-li-icon ui-corner-none">
+					Digital - PC/Notebook </a>
+					</li>
+					<li>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Digital - Tablet.png" alt="Digital - Tablet" class="ui-li-icon">
+					Digital - Tablet </a>
+					</li>
+					<li>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Digital - Other.png" alt="Digital - Other" class="ui-li-icon">
+					Digital - Other </a>
+					</li>
+				</ul>
+				<div data-role="popup" id="oopsFeature">
+					<p>
+						Oops! This feature is not available yet.
+						<p>
+						</div>
+					</div>
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+						<div data-role="navbar" data-theme="a">
+							<ul>
+								<li>
+								<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+								Home </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#about" data-icon="info">
+								Info </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#addItem" data-icon="plus">
+								Add Title </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+						<! -- Begin Footer -- >
+						<footer>
+						<p>
+							 Copyright &copy; 2013 Dominique Houston
+						</p>
+						</footer>
+						<! -- End Footer -->
+					</div>
+				</div>
+				<! -- End Digital Browse Page -- >
+				<! -- StartResultsPage -- >
+				<div data-role="page" id="resultsPage" data-add-back-btn="true">
+					<div data-role="header" data-position="fixed">
+						<h1>
+						ReadKeep: Gold </h1>
+					</div>
+					<div data-role="content">
+						<div id="resultsPageItems">
+						</div>
+					</div>
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+						<div data-role="navbar" data-theme="a">
+							<ul>
+								<li>
+								<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+								Home </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#about" data-icon="info">
+								Info </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#addItem" data-icon="plus">
+								Add Title </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+						<! -- Begin Footer -- >
+						<footer>
+						<p>
+							 Copyright &copy; 2013 Dominique Houston
+						</p>
+						</footer>
+						<! -- End Footer -->
+					</div>
+				</div>
+				<! -- End Digital Browse Page -- >
+				<! -- Start News Stream -- >
+				<div data-role="page" id="newsStream" data-add-back-btn="true">
+					<div data-role="header" data-position="fixed">
+						<h1>
+						News Stream </h1>
+					</div>
+					<div data-role="content">
+						 View a list of titles added to ReadKeep.
+						<ul data-role="listview" data-inset="true" data-divider-theme="d">
+							<li data-role="list-divider">
+							Read Recently </li>
+							<li>
+							<br/>
+							<img src="img/Book - Paperback.png" style="margin-top:7px;">
+							<strong>
+							Omar Tyree - Flyy Lady </strong>
+							</li>
+							<li>
+							<br/>
+							<img src="img/Book - Paperback.png" style="margin-top:7px;">
+							<strong>
+							Britney Spears - Stages </strong>
+							</li>
+							<li data-role="list-divider">
+							Previously Read </li>
+							<li>
+							<br/>
+							<img src="img/Digital - Other.png" style="margin-top:7px;">
+							<strong>
+							Don Ruiz - The Four Agreements </strong>
+							</li>
+							<li>
+							<br/>
+							<img src="img/Digital - Other.png" style="margin-top:7px;">
+							<strong>
+							Robert T. Kiyosaki - Rich Kid, Smart Kid </strong>
+							</li>
+						</ul>
+					</div>
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+						<div data-role="navbar" data-theme="a">
+							<ul>
+								<li>
+								<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
+								Home </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#about" data-icon="info">
+								Info </a>
+								</li>
+								<li>
+								<a data-ajax="false" href="#addItem" data-icon="plus">
+								Add Title </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+						<! -- Begin Footer -- >
+						<footer>
+						<p>
+							 Copyright &copy; 2013 Dominique Houston
+						</p>
+						</footer>
+						<! -- End Footer -->
+					</div>
+				</div>
+				<! -- End New Stream Page -- >
+				<!--  Add Item page -->
+				<div data-role="page" id="addItem" data-add-back-btn="true">
+					<div data-role="header" data-position="fixed">
+						<h1>
+						<a href="index.html">
+						ReadKeep Gold </a>
+						</h1>
+						<div data-role="navbar" data-theme="e">
+							<!-- Nav -->
+							<ul>
+								<li>
+								<a href="#" id="clearLink">
+								Clear Data </a>
+								</li>
+								<li>
+								<a href="#" id="displayLink">
+								Display Data </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+					</div>
+					<div data-role="content" class="ui-content-background-color" id="addItem">
+						<! -- Error Messages -- >
+						<ul id="errors">
+						</ul>
+						<! -- End Error Messages -- >
+						<! -- Begin Form -- >
+						<div id="formBox">
+							<form action="#resultsPage" id="bookeepForm">
+								<li>
+								<label class="headLabel"><strong>ReadKeep Title Details</strong>
+								</label>
+								</li>
+								<div data-role="fieldcontain" class="ui-hide-label">
+									<label for="workTitle">Title</label>
+									<input type="text" name="workTitle" id="workTitle" class="required" value="" placeholder="Work Title (required)"/>
+								</div>
+								<div data-role="fieldcontain" class="ui-hide-label">
+									<label for="workTitle">Author</label>
+									<input type="text" name="workAuthorName" id="workAuthorName" class="required" value="" placeholder="Author Name (required)"/>
+								</div>
+								<div data-role="fieldcontain" class="ui-hide-label">
+									<label for="workTitle">Year Published</label>
+									<input type="text" name="workYearPublished" id="workYearPublished" class="required number" maxlength="4" minlength="2" value="" placeholder="Year Published (required)"/>
+								</div>
+								<div data-role="fieldcontain" class="ui-hide-label">
+									<label for="workTitle">Source / Published URL</label>
+									<input type="text" name="workUrl" id="workUrl" value="" class="required url" placeholder="http:// (required)"/>
+								</div>
+								<div data-role="fieldcontain">
+									<fieldset data-role="controlgroup">
+										<legend>Finished reading?</legend>
+										<input type="radio" name="readTitle" id="readTitle-1" value="Yes" checked="checked"/>
+										<label for="readTitle-1">Yes</label>
+										<input type="radio" name="readTitle" id="readTitle-2" value="No"/>
+										<label for="readTitle-2">No</label>
+									</fieldset>
+								</div>
+								<div data-role="fieldcontain">
+									<input type="checkbox" name="fav" id="fav" class="custom"/>
+									<label for="fav">Save as Favorite</label>
+								</div>
+								<div data-role="fieldcontain" id="dropDown">
+									<label class="labelHead">Where did you read it?</label>
+								</div>
+								<div data-role="fieldcontain">
+									<label for="notes">Notes/Comments:</label>
+									<textarea name="text" id="notes"></textarea>
+								</div>
+								<div data-role="fieldcontain">
+									<label for="readStart">Read Start Date:</label>
+									<input type="date" name="readStart" id="readStart" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+								</div>
+								<div data-role="fieldcontain">
+									<label for="readFinish">Read Finish Date:</label>
+									<input type="date" name="readFinish" id="readFinish" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+								</div>
+								<label for="slider-fill">Rate the Title:</label>
+								<input type="range" name="stars" id="stars" min="0" max="10" step="1" data-highlight="true"/>
+								<input type="hidden" id="reader" value="evaluation">
+								<input id="submit" type="submit" value="Save Title">
+							</form>
+						</div>
+						<! -- End Form  -- >
+					</div>
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+					</div>
+				</div>
+			</div>
+			<div data-role="dialog" id="errorPage">
+				<div data-position="fixed" data-role="header">
+					<h1>Missing Fields</h1>
+				</div>
+				<!-- header -->
+				<div data-role="content">
+					<ul>
+						<li>test</li>
+					</ul>
+				</div>
+			</div>
+			<!-- JavaScript under here -->
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+			<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+			<script src="js/json.js">
+                                                                                                                                                                                                                                                                                                                                                                                </script>
+			<script src="js/main.js">
+                                                                                                                                                                                                                                                                                                                                                                                    </script>
+			</body>
+			</html>

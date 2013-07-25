@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- Dominique Houston -->
+<!-- MIU  1307 -->
+<!-- Assignment 3 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>
+ReadKeep Bronze </title>
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on">
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css"/>
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js">
+    </script>
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="content" data-inset="false" class="ui-content-background-color">
+		<div data-role="header" data-position="fixed">
+			<header>
+			<div id="boundingBox">
+				<a href="#">
+				<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+				</a>
+			</div>
+			<a data-ajax="false" href="additem.html">
+			<img src="img/cta-button.png" alt="Add A New Title" class="cta-button"/>
+			</a>
+			</header>
+		</div>
+		<div style="clear:both;height:5px;">
+		</div>
+		<div>
+			<!-- List -->
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Sort Platforms..." data-inset="true">
+				<li data-role="list-divider">
+				<h2>
+				Browse By Platform </h2>
+				</li>
+				<li data-theme="a">
+				<a href="#browseBook">
+				Book </a>
+				</li>
+				<li data-theme="a">
+				<a href="#browseDigital">
+				Digital </a>
+				</li>
+			</ul>
+		</div>
+		<!-- List -->
+		<! -- Begin Footer -- >
+		<footer>
+		<p>
+			 Copyright &copy; 2013 Dominique Houston
+		</p>
+		</footer>
+		<! -- End Footer -->
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<!-- Nav -->
+		<div data-role="navbar" data-theme="a">
+			<ul>
+				<li>
+				<a href="index.html" data-icon="home" class="ui-btn-active">
+				Home </a>
+				</li>
+				<li>
+				<a href="#about" data-icon="info">
+				Info </a>
+				</li>
+				<li>
+				<a href="#newsStream" data-icon="star">
+				News Stream </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Nav -->
+	</div>
+</div>
+<! -- Start About Page -- >
+<div data-role="page" id="about" data-add-back-btn="true">
+	<div data-role="content">
+		<div data-role="header" data-position="fixed">
+			<header>
+			<div id="boundingBox">
+				<a href="index.html">
+				<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+				</a>
+			</div>
+			</header>
+		</div>
+		<h3>
+		About ReadKeep </h3>
+		<p>
+			 Keep track of what you read.
+		</p>
+		<br/>
+		<p>
+			<small>
+			&copy; Copyright 2013 Dominique Houston </small>
+		</p>
+		<h3>
+		GitHub Links </h3>
+		<p>
+			<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2">
+			Repository </a>
+		</p>
+		<br/>
+		<p>
+			<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2/tree/master/Bronze">
+			Bronze App </a>
+		</p>
+		<br/>
+		<p>
+			<a href="https://github.com/Y30130/Houston_Dominique_MIU_Project2/tree/master/bronze">
+			Bronze App </a>
+		</p>
+	</div>
+	<! -- Begin Footer -- >
+	<footer>
+	<p>
+		 Copyright &copy; 2013 Dominique Houston
+	</p>
+	</footer>
+	<! -- End Footer -->
+	<div data-role="footer" data-position="fixed">
+		<!-- Nav -->
+		<div data-role="navbar" data-theme="a">
+			<ul>
+				<li>
+				<a href="index.html" data-icon="home">
+				Home </a>
+				</li>
+				<li>
+				<a href="#about" data-icon="info" class="ui-btn-active">
+				Info </a>
+				</li>
+				<li>
+				<a href="#newsStream" data-icon="star">
+				News Stream </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Nav -->
+	</div>
+</div>
+<! -- End About Page -- >
+<! -- Start Book Browse Page -- >
+<div data-role="page" id="browseBook" data-add-back-btn="true">
+	<div data-role="content">
+		<div data-role="header" data-position="fixed">
+			<h1>
+			ReadKeep: Bronze </h1>
+		</div>
+		<div style="clear:both;height:50px;">
+		</div>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-a" style="height:auto;">
+					<center>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Book - Paperback.png">
+					<br/>
+					</center>
+					Book - Paperback</a>
+				</div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-a" style="height:auto;">
+					<center>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Book - Hardcover.png">
+					<br/>
+					</center>
+					Book - Hardcover </a>
+				</div>
+			</div>
+			<div class="ui-block-c">
+				<div class="ui-bar ui-bar-a" style="height:auto;">
+					<center>
+					<a href="#oopsFeature" data-rel="popup">
+					<img src="img/Book - Other.png">
+					<br/>
+					</center>
+					Book - Other </a>
+				</div>
+			</div>
+		</div>
+		<!-- /grid-b -->
+		<div data-role="popup" id="oopsFeature">
+			<p>
+				Oops! This feature is not available yet.
+				<p>
+				</div>
+				<div data-role="footer" data-position="fixed">
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
+					<!-- Nav -->
+					<div data-role="navbar" data-theme="a">
+						<ul>
+							<li>
+							<a href="index.html" data-icon="home">
+							Home </a>
+							</li>
+							<li>
+							<a href="#about" data-icon="info">
+							Info </a>
+							</li>
+							<li>
+							<a href="#newsStream" data-icon="star">
+							News Stream </a>
+							</li>
+						</ul>
+					</div>
+					<!-- Nav -->
+				</div>
+			</div>
+		</div>
+		<! -- End Book Browse Page -- >
+		<! -- Start Digital Browse Page -- >
+		<div data-role="page" id="browseDigital" data-add-back-btn="true">
+			<div data-role="content">
+				<div data-role="header" data-position="fixed">
+					<h1>
+					ReadKeep: Bronze </h1>
+				</div>
+				<div style="clear:both;height:50px;">
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a" style="height:auto;">
+							<center>
+							<a href="#oopsFeature" data-rel="popup">
+							<img src="img/Digital - Personal Computer.png">
+							<br/>
+							</center>
+							Digital - PC/Notebook </a>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-a" style="height:auto;">
+							<center>
+							<a href="#oopsFeature" data-rel="popup">
+							<img src="img/Digital - Tablet.png">
+							<br/>
+							</center>
+							Digital - Tablet/eReader </a>
+						</div>
+					</div>
+					<div class="ui-block-c">
+						<div class="ui-bar ui-bar-a" style="height:auto;">
+							<center>
+							<a href="#oopsFeature" data-rel="popup">
+							<img src="img/Digital - Other.png">
+							<br/>
+							</center>
+							Digital - Other </a>
+						</div>
+					</div>
+				</div>
+				<!-- /grid-b -->
+				<div data-role="popup" id="oopsFeature">
+					<p>
+						Oops! This feature is not available yet.
+						<p>
+						</div>
+					</div>
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+						<div data-role="navbar" data-theme="a">
+							<ul>
+								<li>
+								<a href="index.html" data-icon="home" class="ui-btn-active">
+								Home </a>
+								</li>
+								<li>
+								<a href="#about" data-icon="info">
+								Info </a>
+								</li>
+								<li>
+								<a href="#newsStream" data-icon="star">
+								News Stream </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+					</div>
+				</div>
+				<! -- End Digital Browse Page -- >
+				<! -- Start News Stream -- >
+				<div data-role="page" id="newsStream" data-add-back-btn="true">
+					<div data-role="header" data-position="fixed">
+						<h1>
+						News Stream </h1>
+					</div>
+					<div data-role="content">
+						 View a list of titles added to ReadKeep.
+						<ul data-role="listview" data-inset="true" data-divider-theme="d">
+							<li data-role="list-divider">
+							Read Recently </li>
+							<li>
+							<br/>
+							<img src="img/Book - Paperback.png" style="margin-top:7px;">
+							<strong>
+							Omar Tyree - Flyy Lady </strong>
+							</li>
+							<li>
+							<br/>
+							<img src="img/Book - Paperback.png" style="margin-top:7px;">
+							<strong>
+							Britney Spears - Stages </strong>
+							</li>
+							<li data-role="list-divider">
+							Previously Read </li>
+							<li>
+							<br/>
+							<img src="img/Digital - Other.png" style="margin-top:7px;">
+							<strong>
+							Don Ruiz - The Four Agreements </strong>
+							</li>
+							<li>
+							<br/>
+							<img src="img/Digital - Other.png" style="margin-top:7px;">
+							<strong>
+							Robert T. Kiyosaki - Rich Kid, Smart Kid </strong>
+							</li>
+						</ul>
+					</div>
+					<div data-role="footer" data-position="fixed">
+						<!-- Nav -->
+						<div data-role="navbar" data-theme="a">
+							<ul>
+								<li>
+								<a href="index.html" data-icon="home" class="ui-btn-active">
+								Home </a>
+								</li>
+								<li>
+								<a href="#about" data-icon="info">
+								Info </a>
+								</li>
+								<li>
+								<a href="#newsStream" data-icon="star" class="ui-btn-active">
+								News Stream </a>
+								</li>
+							</ul>
+						</div>
+						<!-- Nav -->
+						<! -- Begin Footer -- >
+						<footer>
+						<p>
+							 Copyright &copy; 2013 Dominique Houston
+						</p>
+						</footer>
+						<! -- End Footer -->
+					</div>
+				</div>
+				<! -- End New Stream Page -- >
+				<!--  ..  ..  ..  ..  .. results page ..  ..  ..  .. ..  -->
+				<div data-role="page" id="resultsPage" data-add-back-btn="true">
+					<div data-role="header" data-position="fixed">
+						<h1>
+						Search Results </h1>
+					</div>
+					<div data-role="content" id="items">
+					</div>
+					<div data-role="footer" data-position="fixed" data-id="resultPage">
+					</div>
+				</div>
+				<!-- .......................................................................... -->
+				<!-- JavaScript under here -->
+				<script src="http://code.jquery.com/jquery-1.8.3.min.js">
+  </script>
+				<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js">
+  </script>
+				<script src="js/main.js">
+  </script>
+				<script src="js/json.js">
+  </script>
+				</body>
+				</html>

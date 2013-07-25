@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/* CSS Document */
+/* 	Dominique Houston	Term:1306	VFW Project 2*/
+/* CSS Resets & Global Style Fixes */
+body,a,p,header,footer {
+	margin:0px;
+	padding:0px;
+}
+.clear {
+	clear:both;
+}
+.floatLeft {
+	float:left;
+}
+.floatRight {
+	float:right;
+}
+ul,li, {margin:0px!important;padding:0px!important;}
+.ui-bar-a a.ui-link {text-decoration: none!important;}
+form li {
+	list-style-type:none;
+	float: left;
+	margin: 10px 0px;
+	clear:both;
+}
+img {
+	width: auto;
+}
+/* iPhone form field zoom fix */
+input[type='text'],input[type='number'],textarea,select,input[type='date'] {
+	font-size: 16px;
+}
+/* Global Elements */
+body {
+	margin:0px;
+	padding:0px;
+	font-family:Tahoma,Verdana;
+		font-size:15px;
+	height:100%;
+	background:#FFF;
+	color:#111;
+}
+#container {
+	margin:0px auto;
+	width:auto;
+}
+#wrap {
+	margin: 0px;
+}
+/* Link Stlying */
+
+/* Header Styles */
+header {
+	background:url('../img/cta-bg.jpg');
+	min-height:135px;
+	max-height:135px;
+	margin:0px;
+	text-align:center;
+	width:100%;
+}
+header p {
+	margin:0px;
+	padding:10px;
+	color:#f1f1f1;
+	text-shadow:none;
+	border-bottom:1px solid rgba(0,0,0,0.25);
+	font-style:italic;
+}
+header #boundingBox {
+	width:100%;
+	position:relative;
+	text-align:center;
+	margin:0px auto;
+}
+.cta-logo {
+	margin:0px auto;
+	text-align:center;
+}
+.cta-button {
+	position:relative;
+	left:65px;
+	top: -50px;
+}
+/* Navigation */
+nav {
+	margin:0px;
+	padding:10px 0px;
+	margin:0px 20px;
+}
+nav ul {
+	margin:0px auto;
+	list-style-type:square;
+	color:teal;
+	border-bottom:1px solid #002020;
+	padding:5px 20px;
+	font-size:12px;
+}
+nav ul:hover {
+	list-style-type:square;
+	color:#000;
+}
+nav ul li {
+	display:inline-block;
+	margin:0px 5%;
+}
+#addNew {
+	margin-left: -33px;
+}
+/* Browse Area */
+#browse {
+	width:100%;
+	margin:0px auto;
+	clear:both;
+	min-height:;
+	padding-bottom:10px;
+	height:auto;
+	/* fallback */
+	background-color:#d1d1d1;
+	background:url(../img/browse_bg.jpg);
+	background-repeat:repeat-x;
+	/* Safari 4-5,Chrome 1-9 */
+	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#FFF),to(#d1d1d1));
+	/* Safari 5.1,Chrome 10+*/
+	background:-webkit-linear-gradient(top,#FFF,#d1d1d1);
+	/* Firefox 3.6+*/
+	background:-moz-linear-gradient(top,#FFF,#d1d1d1);
+	/* IE 10 */
+	background:-ms-linear-gradient(top,#FFF,#d1d1d1);
+	/* Opera 11.10+*/
+	background:-o-linear-gradient(top,#FFF,#d1d1d1);
+}
+#browseBox {
+	width:90%;
+	margin:0px auto;
+}
+#browse hr {
+	margin:0px auto;
+}
+#browse #books {
+	font-size:11px;
+	margin:0px;
+}
+#browse #books ul {
+}
+#browse #books li {
+	display:inline-block;
+	list-style-type:;
+	min-width:131px;
+}
+#browse #digital {
+	font-size:11px;
+	margin:0px;
+}
+#browse #digital ul {
+}
+#browse #digital li {
+	display:inline-table;
+	list-style-type:none;
+	min-width: 131px;
+}
+/* Search Area */
+#search {
+	background-color:#d1d1d1;
+	background:url(../img/search_bg.jpg);
+	background-repeat:repeat-x;
+	/* Safari 4-5,Chrome 1-9 */
+	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#414141),to(#5e5e5e));
+	/* Safari 5.1,Chrome 10+*/
+	background:-webkit-linear-gradient(top,#414141,#5e5e5e);
+	/* Firefox 3.6+*/
+	background:-moz-linear-gradient(top,#414141,#5e5e5e);
+	/* IE 10 */
+	background:-ms-linear-gradient(top,#414141,#5e5e5e);
+	/* Opera 11.10+*/
+	background:-o-linear-gradient(top,#414141,#5e5e5e);
+	height:45px;
+	text-align:center;
+	margin:0px auto;
+}
+.footer-search {
+	background:#d1d1d1;
+	background-image:url('../img/spyglass.png');
+	background-repeat:no-repeat;
+	background-position:15px 5px;
+	text-align:left;
+	text-indent:45px;
+	width:90%;
+	margin:10px auto;
+	border:0px solid #FFF;
+	border-radius:7px;
+	height:auto;
+	padding:5px;
+	color: #111;
+}
+/* Form Styles */
+#formBox {margin:0px auto;width:auto;min-width: 320px;}
+
+#errors {
+	color:red;
+}
+#entry {
+margin-top:-25px;
+margin-left:-60px;
+overflow: hidden;
+padding-left:10%;
+padding-right:10%;
+}
+#bookeepForm {
+	width:100%;
+	overflow: hidden;
+}
+
+form legend {
+	clear:both;
+	color:#111;
+	text-transform:uppercase;
+	margin:-10px  auto 20px auto;
+	font-size:20px;
+	float:left;
+	font-weight: bold;
+	text-align: center;
+}
+form .headLabel {
+	clear:both;
+	width:auto;
+	font-size:18px;
+	font-weight:bold;
+	margin:0px auto;
+	margin-bottom:20px;
+}
+form fieldset {
+	border:0px solid;
+}
+form#bookeepForm p {
+	margin:10px 0px 0px 0px;
+	clear:both;
+	max-width: 640px;
+}
+form#bookeepForm label {
+	background:#333;
+	color:#ccc;
+	padding:5px 10px;
+	clear:both;
+	height:auto;
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	width:auto;
+	border-radius:0px;
+}
+#read_title {float:left;width:25px;}
+.radio_value {float:left;width:40px;}
+form#bookeepForm input {
+	border-top:1px solid grey;
+	border-left:0px;
+	border-bottom:1px solid grey;
+	border-right:0px;
+	line-height:14px;
+	float:left;
+	border-radius:0px;
+	width:auto;
+	padding:5px 10px;
+	
+}
+form#bookeepForm textarea {
+	padding:10px 10px;
+	height:auto;
+	clear:both;
+	width:auto;
+	max-width:60%;
+	margin:0px 10px 5px 0px;
+	border:1px solid grey;
+	line-height:14px;
+	float:left;
+}
+form#bookeepForm .radioButton, form#bookeepForm .chkbox {
+	
+}
+input#submit {
+	margin-left:10%!important;
+	background:-webkit-linear-gradient(#063034 0%, #006672 100%);
+	color:#FFF;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:14px;
+	float:left!important;
+	padding:25px 100p!importantx;
+	border-radius:6px!important;
+	min-width:50%;
+}
+/* Range Rating */
+#stars {
+	width:75%!important;
+	margin:0px auto;
+	text-align:center;
+}
+.rate_0 {
+	width:5%;
+}
+.rate_10 {
+	width: 5%;
+}
+/* Toggle CSS */
+#items {
+	margin:0px auto;
+	max-width:768px;
+	min-width:300px;
+	width:auto;
+	padding-left:2.333%;
+	padding-right:2.333%;
+	color:#FFF;
+}
+#items ul {
+	list-style-type:none;
+	margin-left:-15px;
+	margin-right:10px;
+}
+#items ul li {
+	list-style-type:none;
+	margin-left:0px;
+	background:#AAA;
+	margin-left:-13px;
+	padding-left:33px;
+	word-wrap: break-word;
+}
+#items ul li ul {
+	margin-bottom:25px;
+	padding: 10px 0px;
+}
+/* Footer */
+footer {
+	clear:both;
+	font-size:12px;
+	color:#f1f1f1;
+	padding:5px 15px;
+	margin:0px;
+	text-shadow:none;
+	background: #000;
+}

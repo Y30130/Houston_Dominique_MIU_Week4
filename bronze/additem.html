@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Dominique Houston -->
+<!-- MIU  1307 -->
+<!-- Assignment 3 -->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Keep track of the books, magazines, articles, and blogs you've read."/>
+<meta name="keywords" content="bookeep,track,books,reading,logger"/>
+<meta name="ROBOTS" content="index, nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Dominique Houston"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<title>ReadKeep Bronze</title>
+</head>
+<body>
+<! -- Begin Container --  >
+<div id="container">
+	<! -- Begin Header -- >
+	<div id="wrap">
+		<div data-role="content" data-inset="false" class="ui-content-background-color">
+			<div data-role="header" data-position="fixed">
+				<header>
+				<div id="boundingBox">
+					<a href="index.html">
+					<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+					</a>
+				</div>
+				</header>
+			</div>
+			<! -- End Header -- >
+			<! -- Error Messages -- >
+			<ul id="errors">
+			</ul>
+			<! -- End Error Messages -- >
+			<! -- Begin Form -- >
+			<form action="#" method="post" id="bookeepForm">
+				<fieldset id="BookeepTitle">
+					<ul id="errors">
+					</ul>
+					<ul id="entry">
+						<li>
+						<label class="headLabel"><strong>Add New Title</strong></label>
+						</li>
+						<li><small>Enter details about what you've read.</small>
+						<br/>
+						<span style="color:red;font-size:13px;">* = Required Entry</span>
+					</p>
+					<br/></li>
+					<li>
+					<label for="Title">Title <span style="color:red;font-size:13px;">*</span></label>
+					<div class="clear">
+					</div>
+					<input type="text" id="workTitle" placeholder="Hello World..."/>
+					</li>
+					<li>
+					<label for="authorName">Author <span style="color:red;font-size:13px;">*</span></label>
+					<div class="clear">
+					</div>
+					<input type="text" id="workAuthorName" placeholder="John Doe"/>
+					</li>
+					<li>
+					<label for="authorName">Year Published <span style="color:red;font-size:13px;">*</span></label>
+					<div class="clear">
+					</div>
+					<input type="text" id="workYearPublished" placeholder="2000"/>
+					</li>
+					<li>
+					<label for="authorName">Source / Publisher URL <span style="color:red;font-size:13px;">*</span></label>
+					<div class="clear">
+					</div>
+					<input type="text" id="workUrl" placeholder="http://"/>
+					</li>
+					<li>
+					<label class="labelHead">Finished reading book/title?</label>
+					</li>
+					<ul>
+						<li id="read_title">
+						<input type="radio" class="radioButton" name="readTitle" value="Yes"> Yes
+						<div class="clear">
+						</div>
+						<input type="radio" class="radioButton" name="readTitle" value="No"> No </li>
+					</ul>
+					<li>
+					<label class="labelHead">Is this title a favorite?</label>
+					</li>
+					<li>
+					<input type="checkbox" id="fav" name="fav" class="chkbox" value="Yes" style="width:25px;float:left;" checked> Save as Favorite </li>
+					<li id="dropDown">
+					<p>
+						<label class="labelHead">Where did you read it? <span style="color:red;font-size:13px;">*</span></label>
+					</p>
+					</li>
+					<p>
+						<label class="labelHead">Notes/Comments:</label>
+					</p>
+					<div class="clear">
+					</div>
+					<p>
+						<textarea name="text" rows="5" cols="40" id="notes"></textarea>
+					</p>
+					<p>
+						<label class="labelHead">Reading Start Date:</label>
+					</p>
+					<div class="clear">
+					</div>
+					<p>
+						<input type="date" id="readStart" name="readStartDate"/>
+					</p>
+					<p>
+						<label class="labelHead">Reading Finish Date:</label>
+					</p>
+					<div class="clear">
+					</div>
+					<p>
+						<input type="date" id="readFinish" name="readFinishDate"/>
+					</p>
+					<p>
+						<label class="labelHead">Rate the Title:</label>
+					</p>
+					<div class="clear">
+					</div>
+					<p>
+						<div class="rate_0 floatLeft">
+							0
+						</div>
+						<div class="floatLeft">
+							<input id="stars" type="range" min="1" max="10">
+						</div>
+						<div class="rate_10 floatLeft">
+							10
+						</div>
+					</p>
+					<div class="clear">
+					</div>
+					<input type="hidden" id="reader" value="evaluation">
+				</ul>
+				<input id="submit" type="button" value="Save Title">
+			</fieldset>
+		</form>
+		<! -- End Form  -- >
+		<nav>
+		<ul id="appNav">
+			<li><a href="#" id="clearLink">Clear Stored Data</a></li>
+			<li><a href="#" id="displayLink">Display Data</a></li>
+			<li id="addNew" style="display:none;"><a href="addItem.html">Add New Title</a></li>
+		</ul>
+		</nav>
+	</div>
+	<! -- Begin Footer -- >
+	<footer>
+	</footer>
+	<! -- End Footer -->
+</div>
+<! -- End Container -->
+<script src="js/json.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
