@@ -15,14 +15,14 @@ ReadKeep Bronze </title>
 <meta http-equiv="cleartype" content="on">
 <!-- StyleSheets under here -->
 <link rel="stylesheet" href="css/styles.css"/>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css"/>
-<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+                            <link rel="stylesheet" href="themes/ReadKeep.css" />
+                            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" /><!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 <script src="js/libs/modernizr.custom.min.js">
     </script>
 </head>
 <body>
-<div data-role="page" id="home">
-	<div data-role="content" data-inset="false" class="ui-content-background-color">
+<div data-role="page" id="home" data-theme="b">
+	<div data-role="content"  data-inset="false" class="ui-content-background-color">
 		<div data-role="header" data-position="fixed">
 			<header>
 			<div id="boundingBox">
@@ -44,28 +44,22 @@ ReadKeep Bronze </title>
 				<h2>
 				Browse By Platform </h2>
 				</li>
-				<li data-theme="a">
+				<li data-theme="b">
 				<a href="#browseBook">
 				Book </a>
 				</li>
-				<li data-theme="a">
+				<li data-theme="b">
 				<a href="#browseDigital">
 				Digital </a>
 				</li>
 			</ul>
 		</div>
 		<!-- List -->
-		<! -- Begin Footer -- >
-		<footer>
-		<p>
-			 Copyright &copy; 2013 Dominique Houston
-		</p>
-		</footer>
-		<! -- End Footer -->
+	
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<!-- Nav -->
-		<div data-role="navbar" data-theme="a">
+		<div data-role="navbar" data-theme="b">
 			<ul>
 				<li>
 				<a href="index.html" data-icon="home" class="ui-btn-active">
@@ -85,7 +79,7 @@ ReadKeep Bronze </title>
 	</div>
 </div>
 <! -- Start About Page -- >
-<div data-role="page" id="about" data-add-back-btn="true">
+<div data-role="page" id="about" data-add-back-btn="true" data-theme="b">
 	<div data-role="content">
 		<div data-role="header" data-position="fixed">
 			<header>
@@ -124,15 +118,11 @@ ReadKeep Bronze </title>
 		</p>
 	</div>
 	<! -- Begin Footer -- >
-	<footer>
-	<p>
-		 Copyright &copy; 2013 Dominique Houston
-	</p>
-	</footer>
+	
 	<! -- End Footer -->
 	<div data-role="footer" data-position="fixed">
 		<!-- Nav -->
-		<div data-role="navbar" data-theme="a">
+		<div data-role="navbar" data-theme="b">
 			<ul>
 				<li>
 				<a href="index.html" data-icon="home">
@@ -153,7 +143,7 @@ ReadKeep Bronze </title>
 </div>
 <! -- End About Page -- >
 <! -- Start Book Browse Page -- >
-<div data-role="page" id="browseBook" data-add-back-btn="true">
+<div data-role="page" id="browseBook" data-add-back-btn="true" data-theme="b">
 	<div data-role="content">
 		<div data-role="header" data-position="fixed">
 			<h1>
@@ -200,15 +190,9 @@ ReadKeep Bronze </title>
 				<p>
 				</div>
 				<div data-role="footer" data-position="fixed">
-					<! -- Begin Footer -- >
-					<footer>
-					<p>
-						 Copyright &copy; 2013 Dominique Houston
-					</p>
-					</footer>
-					<! -- End Footer -->
+					
 					<!-- Nav -->
-					<div data-role="navbar" data-theme="a">
+					<div data-role="navbar" data-theme="b">
 						<ul>
 							<li>
 							<a href="index.html" data-icon="home">
@@ -230,7 +214,7 @@ ReadKeep Bronze </title>
 		</div>
 		<! -- End Book Browse Page -- >
 		<! -- Start Digital Browse Page -- >
-		<div data-role="page" id="browseDigital" data-add-back-btn="true">
+		<div data-role="page" id="browseDigital" data-add-back-btn="true" data-theme="b">
 			<div data-role="content">
 				<div data-role="header" data-position="fixed">
 					<h1>
@@ -277,19 +261,13 @@ ReadKeep Bronze </title>
 						<p>
 						</div>
 					</div>
-					<! -- Begin Footer -- >
-					<footer>
-					<p>
-						 Copyright &copy; 2013 Dominique Houston
-					</p>
-					</footer>
-					<! -- End Footer -->
+					
 					<div data-role="footer" data-position="fixed">
 						<!-- Nav -->
-						<div data-role="navbar" data-theme="a">
+						<div data-role="navbar" data-theme="b">
 							<ul>
 								<li>
-								<a href="index.html" data-icon="home" class="ui-btn-active">
+								<a href="index.html" data-icon="home">
 								Home </a>
 								</li>
 								<li>
@@ -307,10 +285,15 @@ ReadKeep Bronze </title>
 				</div>
 				<! -- End Digital Browse Page -- >
 				<! -- Start News Stream -- >
-				<div data-role="page" id="newsStream" data-add-back-btn="true">
+				<div data-role="page" id="newsStream" data-add-back-btn="true" data-theme="b">
 					<div data-role="header" data-position="fixed">
-						<h1>
-						News Stream </h1>
+						<header>
+						<div id="boundingBox">
+							<a href="index.html">
+							<img src="img/cta-logo.png" alt="Readkeep" class="cta-logo"/>
+							</a>
+						</div>
+						</header>
 					</div>
 					<div data-role="content">
 						 View a list of titles added to ReadKeep.
@@ -347,10 +330,10 @@ ReadKeep Bronze </title>
 					</div>
 					<div data-role="footer" data-position="fixed">
 						<!-- Nav -->
-						<div data-role="navbar" data-theme="a">
+						<div data-role="navbar" data-theme="b">
 							<ul>
 								<li>
-								<a href="index.html" data-icon="home" class="ui-btn-active">
+								<a href="index.html" data-icon="home">
 								Home </a>
 								</li>
 								<li>
@@ -364,18 +347,12 @@ ReadKeep Bronze </title>
 							</ul>
 						</div>
 						<!-- Nav -->
-						<! -- Begin Footer -- >
-						<footer>
-						<p>
-							 Copyright &copy; 2013 Dominique Houston
-						</p>
-						</footer>
-						<! -- End Footer -->
+						
 					</div>
 				</div>
 				<! -- End New Stream Page -- >
 				<!--  ..  ..  ..  ..  .. results page ..  ..  ..  .. ..  -->
-				<div data-role="page" id="resultsPage" data-add-back-btn="true">
+				<div data-role="page" id="resultsPage" data-add-back-btn="true" data-theme="b">
 					<div data-role="header" data-position="fixed">
 						<h1>
 						Search Results </h1>

@@ -22,18 +22,12 @@ img {
 	width: auto;
 }
 /* iPhone form field zoom fix */
-input[type='text'],input[type='number'],textarea,select,input[type='date'] {
+input[type='text'],input[type='number'],textarea,input[type='date'] {
 	font-size: 16px;
 }
 /* Global Elements */
 body {
-	margin:0px;
-	padding:0px;
-	font-family:Tahoma,Verdana;
-		font-size:15px;
-	height:100%;
-	background:#FFF;
-	color:#111;
+
 }
 #container {
 	margin:0px auto;
@@ -47,7 +41,7 @@ body {
 /* Header Styles */
 header {
 	background:url('../img/cta-bg.jpg');
-	min-height:135px;
+	min-height:65px;
 	max-height:135px;
 	margin:0px;
 	text-align:center;
@@ -71,9 +65,13 @@ header #boundingBox {
 	margin:0px auto;
 	text-align:center;
 }
+.cta-logo-small {
+	margin:7px auto 0px;
+	text-align:center;
+}
 .cta-button {
 	position:relative;
-	left:65px;
+	left:53px;
 	top: -50px;
 }
 /* Navigation */
@@ -192,7 +190,7 @@ nav ul li {
 
 #errors {
 	color:red;
-	height:5px;
+	height:auto;
 }
 form {
 	color:#111;
@@ -264,3 +262,4 @@ footer {
 
 /* jqm overwrites */
 .ui-mobile-viewport {overflow-x: visible!important;}
+a.ui-mobile .ui-btn-left, .ui-mobile .ui-btn-right, .ui-btn-left>.ui-btn, .ui-btn-right>.ui-btn {margin-top:10px!important;margin-left:10px!important;}

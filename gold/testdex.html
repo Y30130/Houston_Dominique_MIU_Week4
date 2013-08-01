@@ -125,11 +125,11 @@
 		<div data-role="navbar" data-theme="a">
 			<ul>
 				<li>
-				<a data-ajax="false" href="index.html" data-icon="home">
+				<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
 				Home </a>
 				</li>
 				<li>
-				<a data-ajax="false" href="#about" data-icon="info"  class="ui-btn-active">
+				<a data-ajax="false" href="#about" data-icon="info">
 				Info </a>
 				</li>
 				<li>
@@ -178,7 +178,7 @@
 					<div data-role="navbar" data-theme="a">
 						<ul>
 							<li>
-							<a data-ajax="false" href="index.html" data-icon="home">
+							<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
 							Home </a>
 							</li>
 							<li>
@@ -192,6 +192,13 @@
 						</ul>
 					</div>
 					<!-- Nav -->
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
 				</div>
 			</div>
 		</div>
@@ -232,7 +239,7 @@
 						<div data-role="navbar" data-theme="a">
 							<ul>
 								<li>
-								<a data-ajax="false" href="index.html" data-icon="home">
+								<a data-ajax="false" href="index.html" data-icon="home" class="ui-btn-active">
 								Home </a>
 								</li>
 								<li>
@@ -246,7 +253,13 @@
 							</ul>
 						</div>
 						<!-- Nav -->
-						
+						<! -- Begin Footer -- >
+						<footer>
+						<p>
+							 Copyright &copy; 2013 Dominique Houston
+						</p>
+						</footer>
+						<! -- End Footer -->
 					</div>
 				</div>
 				<! -- End Digital Browse Page -- >
@@ -381,33 +394,33 @@
 								</li>
 							</ul>
 						</div>
-<br />
+
 						<! -- Begin Form -- >
     <div id="formBox">
                                   <form action="#resultsPage" id="bookeepForm">
         <li>
-        <!--- Form Label No Longer Hidden, Form Selection ---><label class="headLabel"><strong>Add New Title</strong></label>
+                                      <label class="headLabel"><strong>ReadKeep Title Details</strong> </label>
                                     </li>
         <div data-role="fieldcontain">
-        <!--- Form Label No Longer Hidden, Form Selection ---><label for="workTitle">Title</label>
+                                      <label for="workTitle">Title</label>
                                       <input type="text" name="workTitle" id="workTitle" class="required" value="" placeholder="Work Title (required)"/>
                                     </div>
         <div data-role="fieldcontain">
-        <!--- Form Label No Longer Hidden, Form Selection ---><label for="workTitle">Author</label>
+                                      <label for="workTitle">Author</label>
                                       <input type="text" name="workAuthorName" id="workAuthorName" class="required" value="" placeholder="Author Name (required)"/>
                                     </div>
         <div data-role="fieldcontain">
-        <!--- Form Label No Longer Hidden, Form Selection ---><label for="workTitle">Year Published</label>
+                                      <label for="workTitle">Year Published</label>
                                       <input type="text" name="workYearPublished" id="workYearPublished" class="required number" maxlength="4" minlength="2" value="" placeholder="Year Published (required)"/>
                                     </div>
         <div data-role="fieldcontain">
-        <!--- Form Label No Longer Hidden, Form Selection ---><label for="workTitle">Source / Published URL</label>
+                                      <label for="workTitle">Source / Published URL</label>
                                       <input type="text" name="workUrl" id="workUrl" value="" class="required url" placeholder="http:// (required)"/>
                                     </div>
         <div data-role="fieldcontain">
                                       <fieldset data-role="controlgroup">
             <legend>Finished reading?</legend>
-            <!--- Good Defaults, Yes Checked Value --->
+            <!-- Good Defaults -->
             <input type="radio" name="readTitle" id="readTitle-1" value="Yes" checked="checked"/>
             <label for="readTitle-1">Yes</label>
             <input type="radio" name="readTitle" id="readTitle-2" value="No"/>
@@ -420,7 +433,7 @@
                                     </div>
         <div data-role="fieldcontain" id="dropDown">
                                       <label for="select-choice-0" class="select">Where did you read it?</label>
-                                      <!--- Attempted to Fix Select Element, still not working, using  id names provided in example --->
+                                      
                                     </div>
         <div data-role="fieldcontain">
                                       <label for="notes">Notes/Comments:</label>
@@ -442,7 +455,13 @@
                                 </div>
     <! -- End Form  -- > 
 					</div>
-					
+					<! -- Begin Footer -- >
+					<footer>
+					<p>
+						 Copyright &copy; 2013 Dominique Houston
+					</p>
+					</footer>
+					<! -- End Footer -->
 					<div data-role="footer" data-position="fixed">
 						<!-- Nav -->
 					</div>

@@ -10,10 +10,12 @@
 <meta name="ROBOTS" content="index, nofollow"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="author" content="Dominique Houston"/>
-<link href="css/styles.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="themes/ReadKeep.css" />
+
 <title>ReadKeep Bronze</title>
 </head>
-<body>
+<body class="ui-body-b">
 <! -- Begin Container --  >
 <div id="container">
 	<! -- Begin Header -- >
@@ -85,7 +87,7 @@
 					<label class="labelHead">Is this title a favorite?</label>
 					</li>
 					<li>
-					<input type="checkbox" id="fav" name="fav" class="chkbox" value="Yes" style="width:25px;float:left;" checked> Save as Favorite </li>
+					<input type="checkbox" id="fav" name="fav" class="chkbox" value="Yes" style="width:25px;float:left;" checked> Save as Favorite </li> <! --- Example of Good Defaults, Less Appropriate Version --- >
 					<li id="dropDown">
 					<p>
 						<label class="labelHead">Where did you read it? <span style="color:red;font-size:13px;">*</span></label>
@@ -135,7 +137,9 @@
 					</div>
 					<input type="hidden" id="reader" value="evaluation">
 				</ul>
-				<input id="submit" type="button" value="Save Title">
+				
+				<input id="submit" type="button" class="ui-submit ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a" value="Save Title">
+				
 			</fieldset>
 		</form>
 		<! -- End Form  -- >
